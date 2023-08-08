@@ -26,9 +26,7 @@ The generator learns how to create new images over time that resemble real image
 CycleGAN uses a cycle consistency loss to enable training without the need for paired data. It can translate from one domain to the other without the need of a one-to-one mapping between the source and target domain. All we requre is a directory of source and target images.
 
 # I found this analogy helpful to understand Cyclic GAN architecture
-![Uploading image.png…]()
-
-
+![](image/model.jpg)
 
 First, we get the regular generator discriminator thing, where the generator tries to generate images that seem to be drawn to the given domain (in the example will be creating zebra images), but it would be possible that the generator generates only the same zebra image or zebra images that do not look like the imputed horse image, this is why the model has a second generator, this second generator uses the first generated image and tries to recreate the original imputed horse image, this way the first generator has to generate zebra images that look like the imputed horse image.
 
