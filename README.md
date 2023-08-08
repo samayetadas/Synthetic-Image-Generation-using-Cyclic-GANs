@@ -20,6 +20,8 @@ GANs or Generative Adversial Networks comprise atleast two neural networks that 
 
 The generator learns how to create new images over time that resemble real images and tries to confuse the discriminator whose sole aim is to differentiate between which image is really real and which one is fake/generated.
 
+![](image/gan1.png)
+
 # Moving forward to CycleGAN
 CycleGAN uses a cycle consistency loss to enable training without the need for paired data. It can translate from one domain to the other without the need of a one-to-one mapping between the source and target domain. All we requre is a directory of source and target images.
 
